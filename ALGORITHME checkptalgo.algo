@@ -1,0 +1,25 @@
+ALGORITHME checkptalgo
+ nbrevoyel:integer:=0;
+ nbrecaractere:integer:=0;
+ nbreword=0:integer:=0;
+ c:char;
+
+
+BEGIN 
+ while(c<>".")
+ read(c);
+ nbrecaractere= nbrecaractere+1;
+IF(c=="") THEN 
+ nbreword=nbreword+1;
+END_IF  
+
+ while(c=="")
+    nbrecaractere=nbrecaractere+1;
+    IF((Upercase(c)=="A"))&&(c==Majus(u))&&(c==Majus(e))&&(c==Majus(i))&&(c==majus(y))&&(c==Majus(o)));
+    nbrevoyel=nbrevoyel+1;
+    END_IF
+ END_While
+ write("la somme des mots :",nbreword);
+ write("la somme des caractere existe dans cette phrase:",nbrecaractere);
+ write("la somme des voyelles :",nbrevoyel);
+END
